@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Todo</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./Todo.class.js"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row">
+        <h1 class="display-3">My Todos</h1>
+      </div>
+
+      <div class="row mt-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text">I need to</span>
+          <input id="todo-input" type="text" class="form-control" />
+          <button id="todo-btn" class="btn btn-primary" type="button">
+            Add
+          </button>
+        </div>
+        <div id="error-message" class="text-danger">
+          <!-- <span>something went wrong</span> -->
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div id="todo-status" class="mb-2">0/9</div>
+        <ul id="todo-list" class="list-group">
+          <li class="list-group-item">
+            <i class="bi bi-trash-fill text-danger"></i>
+            <span class="ms-2">Not completed item 1</span>
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-trash-fill text-danger"></i>
+            <span class="ms-2">Not completed item</span>
+          </li>
+          <li class="list-group-item">
+            <i class="bi bi-trash-fill text-danger"></i>
+            <span class="ms-2 text-decoration-line-through text-muted">
+              Not completed item
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
